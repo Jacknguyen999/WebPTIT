@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Kí</title>
+    <link rel="stylesheet" href="style2.css">
+  
+    
+</head>
+<body>
+    
+    <div class="center">
+        <h1>Đăng kí</h1>
+        <form method="post" onsubmit="handleFormSubmit(event)">
+            <div class="text">
+                <input type="text" name="studentId" required>
+                <span></span>
+                <label >Mã Sinh Viên</label>
+
+            </div>
+            <div class="text">
+                <input type="text" name="studentId" required>
+                <span></span>
+                <label >Email</label>
+
+            </div>
+            <div class="text">
+                <input id="password" type="password" name="password" required>
+                <span></span>
+                <label >Mật khẩu</label>
+            </div>
+            <div class="text">
+                <input type="password" name="password" required>
+                <span></span>
+                <label >Xác Nhận Mật Khẩu</label>
+            </div>
+
+            <input type="submit" value="Đăng Kí">
+            <div class="signup">
+                Đã có tài khoản? <a href="index.html">Đăng Nhập </a>
+            </div>
+
+        </form>
+    </div> 
+    <script>
+        function validateForm() {
+          var password = document.getElementById("password").value;
+          var confirmPassword = document.getElementById("confirmPassword").value;
+        
+          if (password != confirmPassword) {
+            alert("Mật khẩu và xác nhận mật khẩu không khớp!");
+            return false;
+          }
+          return true;
+        }
+    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<console class="log"></console>
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+    <head>  
+        <title>Login Web</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    </head>
+ 
+    
+    <body>
+        
+        <div class="center">
+            <h1>Đăng nhập</h1>
+            <form method="post" onsubmit="handleFormSubmit(event)">
+                <div class="text">
+                    <input type="text" name="studentId" required>
+                    <span></span>
+                    <label >Mã Sinh Viên</label>
+
+                </div>
+                <div class="text">
+                    <input id="password" type="password" name="password" required>
+                    <label for="password">Mật Khẩu</label>
+                    <span class="password-toggle-icon"><i id="show-pwd-btn" class="fas fa-eye"></i></span>
+                    
+                </div>
+                <div class="pass">
+                    <a href="https://code.ptit.edu.vn/password/reset" target="_blank">
+                        Quên Mật Khẩu?
+                    </a> 
+                </div>
+                
+                <input type="submit" value="Đăng nhập">
+                <div class="signup">
+                    Chưa có tài khoản? <a href="index2.html">Đăng kí </a>
+                </div>
+
+            </form>
+        </div>
+
+
+
+<!-- Include the JavaScript code -->
+<script src="app.js"></script>
+    </body>
+</html>
