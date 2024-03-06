@@ -19,7 +19,7 @@
 
             </div>
             <div class="text">
-                <input type="text" name="studentId" required>
+                <input type="email" name="email" required>
                 <span></span>
                 <label >Email</label>
 
@@ -30,7 +30,7 @@
                 <label >Mật khẩu</label>
             </div>
             <div class="text">
-                <input type="password" name="password" required>
+                <input id="confirmPassword" type="password" name="password" required>
                 <span></span>
                 <label >Xác Nhận Mật Khẩu</label>
             </div>
@@ -43,13 +43,13 @@
         </form>
     </div> 
     <script>
-        function validateForm() {
-          var password = document.getElementById("password").value;
-          var confirmPassword = document.getElementById("confirmPassword").value;
+        function handleFormSubmit(event) {
+          const password = document.getElementById("password");
+          const confirmPassword = document.getElementById("confirmPassword");
         
           if (password != confirmPassword) {
             alert("Mật khẩu và xác nhận mật khẩu không khớp!");
-            return false;
+            return handleFormSubmit;
           }
           return true;
         }

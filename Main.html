@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header class="header">
+<section class="flex">
+    <a href="Main.html" class="logo">WEB PTIT</a>
+    <form action="search.html" method="post" class="search-form">
+        <input type="text" placeholder="Tìm kiếm..." name="search_box" maxlength="100">
+        <button type="submit" class="fas fa-search"></button>
+
+
+    </form>
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="user-btn" class="fas fa-user"></div>
+        <div id="toggle-btn" class="fas fa-sun"></div>
+    </div>
+    <div class="profile">
+        <img src="pic/profile.jpg" alt="" class="image">
+        <h3 class="name">Thomas</h3>
+        <p class="role">Student</p>
+        <a href="profile.html" class="btn">Hồ Sơ</a>
+        <div class="flex-btn">
+            <a href="index.html" class="option-btn">Đăng Nhập</a>
+            <a href="index2.html" class="option-btn">Đăng Kí</a>
+            
+        </div>
+    </div>
+</section>
+
+</header>
+<div class="side-bar">
+    <div id="close-btn">
+        <i class="fas fa-times"></i>
+    </div>
+    <div class="profile">
+        <img src="pic/profile.jpg" alt="" class="image">
+        <h3 class="name">Thomas</h3>
+        <p class="role">Student</p>
+        <a href="profile.html" class="btn">Hồ Sơ</a>
+
+</div>
+<nav class="navbar">
+    <a href="Main.html"><i class="fas fa-home"></i><span>Luyện Tập</span></a>
+    <a href="Thi.html"><i class="fas fa-graduation-cap"></i><span>Thi</span></a>
+</nav>
+</div>
+<section class="home-grid">
+    <h1 class="heading"><i class="fa-solid fa-code"></i> Bài Tập</h1>
+    <div class="box-container">
+        <div class="box">
+    <h2><i class="fa-brands fa-html5"></i><span> Bài 1</span></h2>
+         <h3>Ngôn ngữ : HTML</h3>
+         <h3>Yêu cầu : Code trang web login </h3>
+         <h3>Hình Thức : Trắc Nghiệm </h3>
+         <a href="lambai.html" class="lambai">Làm Bài</a>
+        </div>
+    
+    
+    
+        <div class="box">
+    <h2><i class="fa-brands fa-html5"></i><span> Bài 2</span></h2>
+         <h3>Ngôn ngữ : HTML</h3>
+         <h3>Yêu cầu : Code trang web register </h3>
+         <h3>Hình thức : </h3>
+         <a href="lambai.html" class="lambai">Làm Bài</a>
+        </div>
+    </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+
+</html>
