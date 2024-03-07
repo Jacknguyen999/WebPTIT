@@ -105,7 +105,14 @@ section{
    z-index: 1000;
    border-bottom: var(--border);
 }
-
+.ptit-logo {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 20px;
+      align-items: center;  
+}
 .header .flex{
    display: flex;
    align-items: center;
@@ -148,9 +155,12 @@ section{
    text-align: center;
    margin-left: 0.7rem;
 }  
-.icons div:hover{
+.header .flex .icons div:hover{
    background-color: var(--black);
    color: var(--white);
+}
+#search-btn{
+   display: none;
 }
 .header .flex .profile{
    position: absolute;
@@ -166,6 +176,9 @@ section{
    width: 30rem;
    color: var(--black);
 }
+.header .flex .profile .role{
+   color: var(--black);
+}
 
 .header .flex .profile.active{
    transform: scale(1);
@@ -179,6 +192,8 @@ section{
    margin-bottom: 1rem;
 }
 .side-bar{
+   transform: scale(1);
+   transition: 0.5s linear;
    position: fixed;
    top: 0; left: 0;
    width: 30rem;
@@ -232,7 +247,7 @@ section{
 }
 .side-bar .profile .role{
    font-size: 1.8rem;
-   color: var(--light-color);
+   color: var(--black);
 }
 .side-bar .navbar a{
    display: block;
@@ -246,7 +261,7 @@ section{
 }
 
 .side-bar .navbar a span{
-   color:rgb(62,79,95);
+   color:var(--black)
 }
 
 .side-bar .navbar a:hover{
@@ -280,6 +295,8 @@ section{
 .header .flex .logo{
    font-size: 2.5rem;
    color: var(--main-color);
+   padding-left: 0rem;
+
 }
 .lambai {
    font-size: 2rem;

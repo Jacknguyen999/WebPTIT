@@ -77,3 +77,33 @@ if (passwordField.type === "password") {
     togglePassword.classList.add("fa-eye");
 }
 });
+
+const name = document.querySelector('.name') || null;
+const email = document.querySelector('.email') || null;
+const password = document.querySelector('.password') || null;
+const submitBtn = document.querySelector('.submit') || null;
+
+if(name == null){
+
+}else{
+    submitBtn.addEventListener('click',() =>  {
+        fetch('/register-user',{
+            method: 'POST',
+            headers: new Headers({'Content-Type': 'application/json'}),
+            body: JSON.stringify({
+                name : name.value,
+                email : email.value,
+                password : password.value
+        })
+})
+    .then(res => res.json())
+    .then(data => {
+      if(data.name){
+         alert('Đăng kí thành công');
+      }else{
+         alert(data);
+      }
+
+    })
+    })
+}
