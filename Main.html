@@ -15,11 +15,9 @@
     <a href="Main.html" class="logo">
         <img class="ptit-logo" src="pic/logo_ptit.png" alt="">
         WEB PTIT</a> 
-    <form action="search.html" method="post" class="search-form">
-        <input type="text" placeholder="Tìm kiếm..." name="search_box" maxlength="100">
+    <form  method="post" class="search-form">
+        <input id="search-course" type="text" placeholder="Tìm kiếm..." name="" >
         <button type="submit" class="fas fa-search"></button>
-
-
     </form>
     <div class="icons">
         <div id="menu-btn" class="fas fa-bars"></div>                                                               
@@ -33,8 +31,8 @@
             <p class="role">Student</p>
             <a href="profile.html" class="btn">Hồ Sơ</a>
             <div class="flex-btn">
-                <a href="index.html" class="option-btn">Đăng Nhập</a>
-            <a href="index2.html" class="option-btn">Đăng Kí</a>
+                <a href="login.html" class="option-btn">Đăng Nhập</a>
+            <a href="register.html" class="option-btn">Đăng Kí</a>
             
         </div>
     </div>
@@ -59,27 +57,36 @@
 </div>
 <section class="home-grid">
     <h1 class="heading"><i class="fa-solid fa-code"></i> Bài Tập</h1>
-    <div class="box-container">
-        <div class="box">
-    <h2><i class="fa-brands fa-html5"></i><span> Bài 1</span></h2>
-         <h3>Ngôn ngữ : HTML</h3>
-         <h3>Yêu cầu : Code trang web login </h3>
-         <h3>Hình Thức : Trắc Nghiệm </h3>
-         <a href="lambai.html" class="lambai">Làm Bài</a>
+    <div class="box-container" id="course">
+        <div class="box" >
+        <h2><i class="fa-brands fa-html5"></i><span> Bài 1</span></h2>
+        <h3>Ngôn ngữ : HTML</h3>
+        <h3>Yêu cầu : Code trang web login </h3>
+        <h3>Hình Thức : Trắc Nghiệm </h3>
+        <a href="lambai.html" class="lambai">Làm Bài</a>
         </div>
-    
-    
-    
-        <div class="box">
-    <h2><i class="fa-brands fa-html5"></i><span> Bài 2</span></h2>
-         <h3>Ngôn ngữ : HTML</h3>
-         <h3>Yêu cầu : Code trang web register </h3>
-         <h3>Hình thức : </h3>
-         <a href="lambai.html" class="lambai">Làm Bài</a>
+        <div class="box" >
+        <h2><i class="fa-brands fa-html5"></i><span> Bài 2</span></h2>
+        <h3>Ngôn ngữ : HTML</h3>
+        <h3>Yêu cầu : Code trang web register </h3>
+        <h3>Hình thức : </h3>
+        <a href="lambai.html" class="lambai">Làm Bài</a>
         </div>
+        <div class="box" >
+            <h2><i class="fa-brands fa-css3"></i></i><span> Bài 3</span></h2>
+            <h3>Ngôn ngữ : CSS</h3>
+            <h3>Yêu cầu :  </h3>
+            <h3>Hình thức : </h3>
+            <a href="lambai.html" class="lambai">Làm Bài</a>
+            </div>
+            
+
     </div>
 </section>
-
+<script
+type="text/javascript"
+charset="utf8"
+src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="app.js"></script>
 </body>
 

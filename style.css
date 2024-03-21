@@ -86,7 +86,7 @@ form .text{
 .pass:hover{
     text-decoration: underline;
 }
-input[type="submit"]{
+button[type="submit"]{
     width: 270px;;
     height: 50px;
     border: 1px solid rgb(187,32,25);
@@ -98,17 +98,33 @@ input[type="submit"]{
     cursor: pointer;;
     outline: none;
 }
-input[type="submit"]:hover{
+button[type="submit"]:hover{
     border-color: rgb(187,32,25);
     transition: .5s;
 
+}
+.login {
+    display: inline-block; 
+    width: 200px;
+    height: 40px;
+    border-radius: 2rem;
+    background-color: rgb(187,32,25);
+    font-size: 18px;
+    color: mintcream;
+    text-align: center;
+    cursor: pointer;
+    margin-top : .5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    width: 100%;
+    margin: 10px 0;
+    text-decoration: none;
 }
 .signup {
     margin: 30px 0;
     text-align: center;
     font-size :16px;
     color: rgb(187,32,25); 
-
 }
 .password-toggle-icon {
     display: block;

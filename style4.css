@@ -59,3 +59,11 @@ button:focus{
   outline: none;
   background-color: green;
 }
+.safeTimer {
+  display : flex;
+  margin-left: 100px;
+}
+.safeTimer p{
+  display: flex;
+  margin-left: 50%;
+}

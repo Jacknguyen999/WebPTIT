@@ -1,3 +1,4 @@
+//darkmode
 let toggleBtn = document.getElementById('toggle-btn');
 let body = document.body;
 let darkMode = localStorage.getItem('dark-mode');
@@ -26,6 +27,8 @@ toggleBtn.onclick = (e) =>{
       disableDarkMode();
    }
 }
+
+//sidebar
 
 let profile = document.querySelector('.header .flex .profile');
 
@@ -62,48 +65,33 @@ window.onscroll = () =>{
       body.classList.remove('active');
    }
 }
-const passwordField = document.getElementById("password");
-const togglePassword = document.getElementById("show-pwd-btn");
 
-togglePassword.addEventListener("click", function () {
-    console.log(passwordField.type);
-if (passwordField.type === "password") {
-    passwordField.type = "text";
-    togglePassword.classList.remove("fa-eye");
-    togglePassword.classList.add("fa-eye-slash");
-} else {
-    passwordField.type = "password";
-    togglePassword.classList.remove("fa-eye-slash");
-    togglePassword.classList.add("fa-eye");
-}
+
+//backend đăng kí
+
+
+
+// search bar
+   $(document).ready(function() {
+      console.log($('#search-course'));
+      $('#search-course').on('keyup' ,function() {
+      const searchbox = document.getElementById('search-course').value.toUpperCase();
+      const course_item = document.getElementById("course")
+      const product = document.querySelectorAll(".box")
+      const cname = course_item.getElementsByTagName('h3')
+      for(var i = 0 ; i<cname.length ; i++){
+         let match = product[i].getElementsByTagName('h3')[0];
+         if (match){
+         let textvalue =  match.textContent || match.innerHTML
+         if(textvalue.toUpperCase().indexOf(searchbox) > -1){
+            product[i].style.display = "";
+            } else {
+               product[i].style.display = "none";
+         }
+         }
+      }
+   });
 });
 
-const name = document.querySelector('.name') || null;
-const email = document.querySelector('.email') || null;
-const password = document.querySelector('.password') || null;
-const submitBtn = document.querySelector('.submit') || null;
 
-if(name == null){
 
-}else{
-    submitBtn.addEventListener('click',() =>  {
-        fetch('/register-user',{
-            method: 'POST',
-            headers: new Headers({'Content-Type': 'application/json'}),
-            body: JSON.stringify({
-                name : name.value,
-                email : email.value,
-                password : password.value
-        })
-})
-    .then(res => res.json())
-    .then(data => {
-      if(data.name){
-         alert('Đăng kí thành công');
-      }else{
-         alert(data);
-      }
-
-    })
-    })
-}
